@@ -47,8 +47,8 @@ namespace WindowsFormsApp1
 
             Conexão con = new Conexão();
             MySqlConnection conexao = con.GetConexão();
-     
-            string SQL= "INSERT INTO cadastro(nome_cliente,email_cliente,endereco_cliente,senha_cliente, perfil_usuario)" +
+
+            string SQL = "INSERT INTO cadastro(nome_cliente,email_cliente,endereco_cliente,senha_cliente, perfil_usuario)" +
 
             "values(@nome_cliente,@email_cliente,@endereco_cliente,@senha_cliente,@perfil)";
 
@@ -87,13 +87,13 @@ namespace WindowsFormsApp1
             conexao.Open();
             if (comando.ExecuteNonQuery() >= 1)
             {
-                 
+
                 MessageBox.Show("Cadastro Concluido");
                 FormLogin login = new FormLogin();
                 login.ShowDialog();
                 this.Close();
             }
-            else{
+            else {
                 MessageBox.Show("A Algo Errado No Cadastro");
             }
             conexao.Close();
@@ -105,11 +105,11 @@ namespace WindowsFormsApp1
             MySqlConnection conexao = con.GetConexão();
             string consulta;
 
-                if (pesquisarbox.Text == "")
+            if (pesquisarbox.Text == "")
             {
                 consulta = "SELECT*FROM cadastro";
             }
-                else
+            else
             {
                 consulta = "SELECT*FROM cadastro WHERE nome_cliente like '%" + pesquisarbox.Text + "%'";
             }
@@ -164,17 +164,17 @@ namespace WindowsFormsApp1
             Conexão con = new Conexão();
             MySqlConnection conexao = con.GetConexão();
             string SQL = "DELETE FROM cadastro WHERE id_cadastro=@cadastro";
-            MySqlCommand comando = new MySqlCommand(SQL,conexao);
-                comando.Parameters.AddWithValue("@cadastro", codigo);
+            MySqlCommand comando = new MySqlCommand(SQL, conexao);
+            comando.Parameters.AddWithValue("@cadastro", codigo);
             conexao.Open();
-        
-        if (comando.ExecuteNonQuery() >= 1){
-            MessageBox.Show("Excluido com sucesso");
-    }
+
+            if (comando.ExecuteNonQuery() >= 1) {
+                MessageBox.Show("Excluido com sucesso");
+            }
             else {
                 MessageBox.Show("Erro ao Excluir");
 
-    }
+            }
         }
 
         private void pesquisabox_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -207,5 +207,41 @@ namespace WindowsFormsApp1
 
             }
         }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void butaocadastro_Click(object sender, EventArgs e)
+        {
+
+            Conexão con = new Conexão();
+            MySqlConnection conexao = con.GetConexão();
+
+            string SQL = "INSERT INTO cadastro(nome_rua_endereco,numero_endereco,complemento_endereco,estado, cidade)" +
+
+            "values(@nome_rua_endereco,@numero_endereco,@complemento_endereco,@estado,@cidade)";
+
+            MySqlCommand comando = new MySqlCommand(SQL, conexao);
+
+            comando.Parameters.AddWithValue("@nome_rua_endereco", lagradourobox.Text);
+            comando.Parameters.AddWithValue("@numero_endereco", numerobox.Text);
+            comando.Parameters.AddWithValue("@complemento_endereco", complementobox.Text);
+            comando.Parameters.AddWithValue("@cidade", cidadebox.Text);
+            comando.Parameters.AddWithValue("@estado", estadobox.Text);
+
+
+            conexao.Open();
+            if (comando.ExecuteNonQuery() >= 1)
+            {
+
+                MessageBox.Show("Cadastro Concluido");
+                enderecobox.Text = Convert.ToString(comando.LastInsertedId);
+                nomebox.Focus();
+
+
+
+            }
+        }
     }
-}

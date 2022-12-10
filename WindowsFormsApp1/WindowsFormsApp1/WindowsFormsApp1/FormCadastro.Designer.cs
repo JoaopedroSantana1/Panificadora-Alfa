@@ -53,12 +53,25 @@
             this.pesquisarbox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.lagradourobox = new System.Windows.Forms.TextBox();
+            this.cidadebox = new System.Windows.Forms.TextBox();
+            this.complementobox = new System.Windows.Forms.TextBox();
+            this.numerobox = new System.Windows.Forms.TextBox();
+            this.estadobox = new System.Windows.Forms.TextBox();
+            this.butaocadastro = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pesquisabox)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -309,6 +322,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(128, 103);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -379,6 +393,118 @@
             this.tabPage2.Text = "Cadastro ";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.butaocadastro);
+            this.tabPage3.Controls.Add(this.estadobox);
+            this.tabPage3.Controls.Add(this.numerobox);
+            this.tabPage3.Controls.Add(this.complementobox);
+            this.tabPage3.Controls.Add(this.cidadebox);
+            this.tabPage3.Controls.Add(this.lagradourobox);
+            this.tabPage3.Controls.Add(this.label13);
+            this.tabPage3.Controls.Add(this.label12);
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Controls.Add(this.label10);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1178, 589);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Cadastro Endereco";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(26, 49);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 13);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Logradouro:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(26, 78);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(47, 13);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Numero:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(16, 106);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(74, 13);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "Complemento:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(26, 135);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(43, 13);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Cidade:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(26, 161);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(43, 13);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "Estado:";
+            // 
+            // lagradourobox
+            // 
+            this.lagradourobox.Location = new System.Drawing.Point(96, 46);
+            this.lagradourobox.Name = "lagradourobox";
+            this.lagradourobox.Size = new System.Drawing.Size(177, 20);
+            this.lagradourobox.TabIndex = 5;
+            // 
+            // cidadebox
+            // 
+            this.cidadebox.Location = new System.Drawing.Point(96, 128);
+            this.cidadebox.Name = "cidadebox";
+            this.cidadebox.Size = new System.Drawing.Size(121, 20);
+            this.cidadebox.TabIndex = 6;
+            // 
+            // complementobox
+            // 
+            this.complementobox.Location = new System.Drawing.Point(96, 102);
+            this.complementobox.Name = "complementobox";
+            this.complementobox.Size = new System.Drawing.Size(177, 20);
+            this.complementobox.TabIndex = 7;
+            // 
+            // numerobox
+            // 
+            this.numerobox.Location = new System.Drawing.Point(96, 75);
+            this.numerobox.Name = "numerobox";
+            this.numerobox.Size = new System.Drawing.Size(68, 20);
+            this.numerobox.TabIndex = 8;
+            // 
+            // estadobox
+            // 
+            this.estadobox.Location = new System.Drawing.Point(96, 154);
+            this.estadobox.Name = "estadobox";
+            this.estadobox.Size = new System.Drawing.Size(121, 20);
+            this.estadobox.TabIndex = 9;
+            // 
+            // butaocadastro
+            // 
+            this.butaocadastro.Location = new System.Drawing.Point(96, 192);
+            this.butaocadastro.Name = "butaocadastro";
+            this.butaocadastro.Size = new System.Drawing.Size(75, 23);
+            this.butaocadastro.TabIndex = 11;
+            this.butaocadastro.Text = "Cadastro";
+            this.butaocadastro.UseVisualStyleBackColor = true;
+            this.butaocadastro.Click += new System.EventHandler(this.butaocadastro_Click);
+            // 
             // FormCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -399,6 +525,8 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -430,6 +558,18 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button excluirbtn;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button butaocadastro;
+        private System.Windows.Forms.TextBox estadobox;
+        private System.Windows.Forms.TextBox numerobox;
+        private System.Windows.Forms.TextBox complementobox;
+        private System.Windows.Forms.TextBox cidadebox;
+        private System.Windows.Forms.TextBox lagradourobox;
+        private System.Windows.Forms.Label label13;
     }
 }
 
