@@ -14,9 +14,10 @@ namespace WindowsFormsApp1
         [STAThread]
         static void Main()
         {
+            int codigo = 0;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormProduto());
+            Application.Run(new FormPainel(codigo));
         }
     }
 }

@@ -89,7 +89,7 @@ namespace WindowsFormsApp1
             {
                  
                 MessageBox.Show("Cadastro Concluido");
-                Form2 login = new Form2();
+                FormLogin login = new FormLogin();
                 login.ShowDialog();
                 this.Close();
             }

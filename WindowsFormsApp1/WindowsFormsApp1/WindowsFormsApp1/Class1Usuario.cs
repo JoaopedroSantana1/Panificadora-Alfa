@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
             if (registro.HasRows)
             {
                 logado = (int) registro ["id_login"];
-                Form3 principal = new Form3(logado);
+                FormPainel principal = new FormPainel(logado);
                 principal.ShowDialog();
             }
             else

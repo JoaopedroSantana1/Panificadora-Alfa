@@ -69,10 +69,9 @@
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.panificadoralable);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
             this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panel1.Size = new System.Drawing.Size(1927, 89);
+            this.panel1.Size = new System.Drawing.Size(1445, 72);
             this.panel1.TabIndex = 0;
             this.panel1.TabStop = true;
             // 
@@ -82,10 +81,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1245, 38);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(934, 31);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 28);
+            this.label8.Size = new System.Drawing.Size(44, 23);
             this.label8.TabIndex = 1;
             this.label8.Text = "Alfa";
             // 
@@ -95,10 +93,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panificadoralable.AutoSize = true;
             this.panificadoralable.Font = new System.Drawing.Font("Arial Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panificadoralable.Location = new System.Drawing.Point(1101, 10);
-            this.panificadoralable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.panificadoralable.Location = new System.Drawing.Point(826, 8);
             this.panificadoralable.Name = "panificadoralable";
-            this.panificadoralable.Size = new System.Drawing.Size(148, 28);
+            this.panificadoralable.Size = new System.Drawing.Size(122, 23);
             this.panificadoralable.TabIndex = 0;
             this.panificadoralable.Text = "Panificadora";
             // 
@@ -120,10 +117,9 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(4, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(3, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1565, 721);
+            this.panel2.Size = new System.Drawing.Size(1174, 586);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -132,10 +128,9 @@
             this.perfilbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.perfilbox.BackColor = System.Drawing.Color.Azure;
-            this.perfilbox.Location = new System.Drawing.Point(200, 359);
-            this.perfilbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.perfilbox.Location = new System.Drawing.Point(150, 292);
             this.perfilbox.Name = "perfilbox";
-            this.perfilbox.Size = new System.Drawing.Size(1253, 22);
+            this.perfilbox.Size = new System.Drawing.Size(941, 20);
             this.perfilbox.TabIndex = 14;
             // 
             // label6
@@ -144,10 +139,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(32, 359);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(24, 292);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 21);
+            this.label6.Size = new System.Drawing.Size(45, 16);
             this.label6.TabIndex = 13;
             this.label6.Text = "Perfil";
             // 
@@ -158,10 +152,9 @@
             this.atualizarbtn.BackColor = System.Drawing.Color.LightSeaGreen;
             this.atualizarbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.atualizarbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.atualizarbtn.Location = new System.Drawing.Point(400, 402);
-            this.atualizarbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.atualizarbtn.Location = new System.Drawing.Point(300, 327);
             this.atualizarbtn.Name = "atualizarbtn";
-            this.atualizarbtn.Size = new System.Drawing.Size(114, 68);
+            this.atualizarbtn.Size = new System.Drawing.Size(86, 55);
             this.atualizarbtn.TabIndex = 12;
             this.atualizarbtn.Text = "Atualizar";
             this.atualizarbtn.UseVisualStyleBackColor = false;
@@ -174,10 +167,9 @@
             this.cadastrobtn.BackColor = System.Drawing.Color.Turquoise;
             this.cadastrobtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cadastrobtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cadastrobtn.Location = new System.Drawing.Point(200, 492);
-            this.cadastrobtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cadastrobtn.Location = new System.Drawing.Point(150, 400);
             this.cadastrobtn.Name = "cadastrobtn";
-            this.cadastrobtn.Size = new System.Drawing.Size(314, 90);
+            this.cadastrobtn.Size = new System.Drawing.Size(236, 73);
             this.cadastrobtn.TabIndex = 9;
             this.cadastrobtn.Text = "Cadastrar";
             this.cadastrobtn.UseVisualStyleBackColor = false;
@@ -188,10 +180,9 @@
             this.senhabox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.senhabox.BackColor = System.Drawing.Color.Azure;
-            this.senhabox.Location = new System.Drawing.Point(200, 302);
-            this.senhabox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.senhabox.Location = new System.Drawing.Point(150, 245);
             this.senhabox.Name = "senhabox";
-            this.senhabox.Size = new System.Drawing.Size(1253, 22);
+            this.senhabox.Size = new System.Drawing.Size(941, 20);
             this.senhabox.TabIndex = 8;
             // 
             // excluirbtn
@@ -201,10 +192,9 @@
             this.excluirbtn.BackColor = System.Drawing.Color.LightSeaGreen;
             this.excluirbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.excluirbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.excluirbtn.Location = new System.Drawing.Point(200, 402);
-            this.excluirbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.excluirbtn.Location = new System.Drawing.Point(150, 327);
             this.excluirbtn.Name = "excluirbtn";
-            this.excluirbtn.Size = new System.Drawing.Size(126, 68);
+            this.excluirbtn.Size = new System.Drawing.Size(94, 55);
             this.excluirbtn.TabIndex = 11;
             this.excluirbtn.Text = "Excluir";
             this.excluirbtn.UseVisualStyleBackColor = false;
@@ -215,10 +205,9 @@
             this.enderecobox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.enderecobox.BackColor = System.Drawing.Color.Azure;
-            this.enderecobox.Location = new System.Drawing.Point(200, 242);
-            this.enderecobox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.enderecobox.Location = new System.Drawing.Point(150, 197);
             this.enderecobox.Name = "enderecobox";
-            this.enderecobox.Size = new System.Drawing.Size(1253, 22);
+            this.enderecobox.Size = new System.Drawing.Size(941, 20);
             this.enderecobox.TabIndex = 7;
             // 
             // emailbox
@@ -226,10 +215,9 @@
             this.emailbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.emailbox.BackColor = System.Drawing.Color.Azure;
-            this.emailbox.Location = new System.Drawing.Point(200, 174);
-            this.emailbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.emailbox.Location = new System.Drawing.Point(150, 141);
             this.emailbox.Name = "emailbox";
-            this.emailbox.Size = new System.Drawing.Size(1253, 22);
+            this.emailbox.Size = new System.Drawing.Size(941, 20);
             this.emailbox.TabIndex = 6;
             // 
             // nomebox
@@ -237,10 +225,9 @@
             this.nomebox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nomebox.BackColor = System.Drawing.Color.Azure;
-            this.nomebox.Location = new System.Drawing.Point(200, 117);
-            this.nomebox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nomebox.Location = new System.Drawing.Point(150, 95);
             this.nomebox.Name = "nomebox";
-            this.nomebox.Size = new System.Drawing.Size(1253, 22);
+            this.nomebox.Size = new System.Drawing.Size(941, 20);
             this.nomebox.TabIndex = 5;
             // 
             // label5
@@ -249,10 +236,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(32, 302);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(24, 245);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 21);
+            this.label5.Size = new System.Drawing.Size(49, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "Senha";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -263,10 +249,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(32, 242);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(24, 197);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 21);
+            this.label4.Size = new System.Drawing.Size(72, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Endereço";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -277,10 +262,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(32, 178);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(24, 145);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 21);
+            this.label3.Size = new System.Drawing.Size(46, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Email";
             // 
@@ -290,10 +274,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 122);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(24, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 21);
+            this.label2.Size = new System.Drawing.Size(48, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nome";
             // 
@@ -301,10 +284,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(644, 60);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(483, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 23);
+            this.label1.Size = new System.Drawing.Size(175, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Faça seu Cadastro!";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -314,11 +296,10 @@
             this.caralhobox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.caralhobox.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.caralhobox.Location = new System.Drawing.Point(185, 218);
-            this.caralhobox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.caralhobox.Location = new System.Drawing.Point(146, 190);
             this.caralhobox.Name = "caralhobox";
             this.caralhobox.RowHeadersWidth = 51;
-            this.caralhobox.Size = new System.Drawing.Size(932, 301);
+            this.caralhobox.Size = new System.Drawing.Size(699, 245);
             this.caralhobox.TabIndex = 10;
             this.caralhobox.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.caralhobox_CellDoubleClick);
             // 
@@ -328,11 +309,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(170, 127);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Location = new System.Drawing.Point(128, 103);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1581, 757);
+            this.tabControl1.Size = new System.Drawing.Size(1186, 615);
             this.tabControl1.TabIndex = 11;
             // 
             // tabPage1
@@ -342,11 +322,10 @@
             this.tabPage1.Controls.Add(this.pesquisarbox);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.caralhobox);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1573, 728);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Size = new System.Drawing.Size(1178, 589);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pesquisar";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -359,10 +338,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(872, 120);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(654, 98);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(245, 64);
+            this.button1.Size = new System.Drawing.Size(184, 52);
             this.button1.TabIndex = 15;
             this.button1.Text = "Pesquisar";
             this.button1.UseVisualStyleBackColor = false;
@@ -373,10 +351,9 @@
             this.pesquisarbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pesquisarbox.BackColor = System.Drawing.Color.White;
-            this.pesquisarbox.Location = new System.Drawing.Point(185, 68);
-            this.pesquisarbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pesquisarbox.Location = new System.Drawing.Point(139, 55);
             this.pesquisarbox.Name = "pesquisarbox";
-            this.pesquisarbox.Size = new System.Drawing.Size(932, 22);
+            this.pesquisarbox.Size = new System.Drawing.Size(700, 20);
             this.pesquisarbox.TabIndex = 15;
             // 
             // label7
@@ -385,34 +362,31 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lucida Sans Unicode", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(48, 69);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(36, 56);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 21);
+            this.label7.Size = new System.Drawing.Size(76, 16);
             this.label7.TabIndex = 15;
             this.label7.Text = "Pesquisar";
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1573, 728);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Size = new System.Drawing.Size(1178, 589);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Cadastro ";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FormCadastro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1443, 857);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
+            this.Name = "FormCadastro";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
