@@ -118,48 +118,11 @@ namespace WindowsFormsApp1
             MySqlDataAdapter dados = new MySqlDataAdapter(comando);
             DataTable dtCadastro = new DataTable();
             dados.Fill(dtCadastro);
-            caralhobox.DataSource = dtCadastro;
+            pesquisabox.DataSource = dtCadastro;
             conexao.Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void caralhobox_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                codigo = Convert.ToInt32(caralhobox.Rows[e.RowIndex].Cells[0].Value);
-                Conexão con = new Conexão();
-                MySqlConnection conexao = con.GetConexão();
-                String SQL = "SELECT*FROM cadastro WHERE id_cadastro=@cadastro";
-                MySqlCommand comando = new MySqlCommand(SQL, conexao);
-                conexao.Open();
-                comando.Parameters.AddWithValue("@cadastro", codigo);
-                MySqlDataReader  registro = comando.ExecuteReader();
-
-                if (registro.HasRows)
-                {
-                    registro.Read();
-                    nomebox.Text= Convert.ToString(registro["nome_cliente"]);
-                    emailbox.Text = Convert.ToString(registro["email_cliente"]);
-                    enderecobox.Text = Convert.ToString(registro["endereco_cliente"]);
-                    senhabox.Text = Convert.ToString(registro["senha_cliente"]);
-                    perfilbox.Text = Convert.ToString(registro["perfil"]);
-
-                }
-                else
-                {
-                    MessageBox.Show("Falha selecionar um item");
-                }
-                
-            
-            }
-        }
-
-        private void editarbtn_Click(object sender, EventArgs e)
         {
 
         }
@@ -213,6 +176,36 @@ namespace WindowsFormsApp1
 
     }
         }
+
+        private void pesquisabox_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                codigo = Convert.ToInt32(pesquisabox.Rows[e.RowIndex].Cells[0].Value);
+                Conexão con = new Conexão();
+                MySqlConnection conexao = con.GetConexão();
+                String SQL = "SELECT*FROM cadastro WHERE id_cadastro=@cadastro";
+                MySqlCommand comando = new MySqlCommand(SQL, conexao);
+                conexao.Open();
+                comando.Parameters.AddWithValue("@cadastro", codigo);
+                MySqlDataReader registro = comando.ExecuteReader();
+
+                if (registro.HasRows)
+                {
+                    registro.Read();
+                    nomebox.Text = Convert.ToString(registro["nome_cliente"]);
+                    emailbox.Text = Convert.ToString(registro["email_cliente"]);
+                    enderecobox.Text = Convert.ToString(registro["endereco_cliente"]);
+                    senhabox.Text = Convert.ToString(registro["senha_cliente"]);
+                    perfilbox.Text = Convert.ToString(registro["perfil"]);
+
+                }
+                else
+                {
+                    MessageBox.Show("Falha selecionar um item");
+                }
+
+            }
+        }
     }
 }
-

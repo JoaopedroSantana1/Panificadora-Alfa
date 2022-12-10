@@ -43,5 +43,12 @@ namespace WindowsFormsApp1
            produto.MdiParent = this;
             produto.Show();
         }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormLogin produto = new FormLogin();
+            produto.MdiParent = this;
+            produto.Show();
+        }
     }
 }

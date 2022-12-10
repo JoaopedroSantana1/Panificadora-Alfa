@@ -46,7 +46,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.caralhobox = new System.Windows.Forms.DataGridView();
+            this.pesquisabox = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
@@ -55,7 +55,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.caralhobox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pesquisabox)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -128,7 +128,7 @@
             this.perfilbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.perfilbox.BackColor = System.Drawing.Color.Azure;
-            this.perfilbox.Location = new System.Drawing.Point(150, 292);
+            this.perfilbox.Location = new System.Drawing.Point(150, 291);
             this.perfilbox.Name = "perfilbox";
             this.perfilbox.Size = new System.Drawing.Size(941, 20);
             this.perfilbox.TabIndex = 14;
@@ -152,7 +152,7 @@
             this.atualizarbtn.BackColor = System.Drawing.Color.LightSeaGreen;
             this.atualizarbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.atualizarbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.atualizarbtn.Location = new System.Drawing.Point(300, 327);
+            this.atualizarbtn.Location = new System.Drawing.Point(411, 484);
             this.atualizarbtn.Name = "atualizarbtn";
             this.atualizarbtn.Size = new System.Drawing.Size(86, 55);
             this.atualizarbtn.TabIndex = 12;
@@ -167,7 +167,7 @@
             this.cadastrobtn.BackColor = System.Drawing.Color.Turquoise;
             this.cadastrobtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cadastrobtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cadastrobtn.Location = new System.Drawing.Point(150, 400);
+            this.cadastrobtn.Location = new System.Drawing.Point(141, 484);
             this.cadastrobtn.Name = "cadastrobtn";
             this.cadastrobtn.Size = new System.Drawing.Size(236, 73);
             this.cadastrobtn.TabIndex = 9;
@@ -192,7 +192,7 @@
             this.excluirbtn.BackColor = System.Drawing.Color.LightSeaGreen;
             this.excluirbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.excluirbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.excluirbtn.Location = new System.Drawing.Point(150, 327);
+            this.excluirbtn.Location = new System.Drawing.Point(521, 484);
             this.excluirbtn.Name = "excluirbtn";
             this.excluirbtn.Size = new System.Drawing.Size(94, 55);
             this.excluirbtn.TabIndex = 11;
@@ -291,17 +291,17 @@
             this.label1.Text = "Faça seu Cadastro!";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // caralhobox
+            // pesquisabox
             // 
-            this.caralhobox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pesquisabox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.caralhobox.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.caralhobox.Location = new System.Drawing.Point(146, 190);
-            this.caralhobox.Name = "caralhobox";
-            this.caralhobox.RowHeadersWidth = 51;
-            this.caralhobox.Size = new System.Drawing.Size(699, 245);
-            this.caralhobox.TabIndex = 10;
-            this.caralhobox.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.caralhobox_CellDoubleClick);
+            this.pesquisabox.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pesquisabox.Location = new System.Drawing.Point(146, 190);
+            this.pesquisabox.Name = "pesquisabox";
+            this.pesquisabox.RowHeadersWidth = 51;
+            this.pesquisabox.Size = new System.Drawing.Size(699, 245);
+            this.pesquisabox.TabIndex = 10;
+            this.pesquisabox.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.pesquisabox_CellContentClick);
             // 
             // tabControl1
             // 
@@ -321,10 +321,10 @@
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.pesquisarbox);
             this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.caralhobox);
+            this.tabPage1.Controls.Add(this.pesquisabox);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1178, 589);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pesquisar";
@@ -373,7 +373,7 @@
             this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1178, 589);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Cadastro ";
@@ -394,7 +394,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.caralhobox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pesquisabox)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -421,7 +421,7 @@
         private System.Windows.Forms.Button cadastrobtn;
         private System.Windows.Forms.TextBox perfilbox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView caralhobox;
+        private System.Windows.Forms.DataGridView pesquisabox;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button button1;

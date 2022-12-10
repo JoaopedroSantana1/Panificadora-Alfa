@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
             int codigo = 0;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPainel(codigo));
+            Application.Run(new FormCarrinho()); //alterar pra codigo dps
         }
     }
 }
